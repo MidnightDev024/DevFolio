@@ -1,6 +1,8 @@
 # 🌌 Midnight Dev Portfolio
 
-A full-stack MERN portfolio website built with Vite + React (frontend) and Express + MongoDB (backend). Designed to showcase projects, skills, and contact info with a sleek, dark-mode aesthetic.
+A full-stack MERN portfolio website built with Vite + React (frontend) and Express + MongoDB (backend). 
+
+Designed to showcase projects, skills, and contact info with a sleek, dark-mode aesthetic.
 
 ---
 
