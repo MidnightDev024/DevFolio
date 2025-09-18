@@ -34,7 +34,7 @@ const Navbar = () => {
                 <Link href="/qualification" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Qualification
                 </Link>
-                <Link href="/contact" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                <Link href="/skills" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Skill Set
                 </Link>
                 <Link href="/projects" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
