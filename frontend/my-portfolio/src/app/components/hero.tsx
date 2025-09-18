@@ -3,12 +3,12 @@ import { FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <section id="hero" className="container mx-auto px-4 sm:px-6 lg:px-8 py-24t md:py-32">
+        <section id="hero" className="min-h-screen flex items-center container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         
         {/* Left Column (Text Content) */}
         <div className="md:w-1/2 text-center md:text-left">
-            <span className="text-yellow-400 font-semibold">Hey, I'm Your Name</span>
+            <span className="text-yellow-400 font-semibold">Hey, I'm Akash Chawla</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-2 mb-4">
             I craft digital experiences.
             </h1>

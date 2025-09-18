@@ -21,7 +21,7 @@ const Navbar = () => {
           {/* Logo / Your Name */}
             <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-white">
-                Your Name
+                Mid Night Dev
             </Link>
             </div>
 
@@ -31,13 +31,16 @@ const Navbar = () => {
                 <Link href="#about" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 About
                 </Link>
-                <Link href="#experience" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                Experience
+                <Link href="/qualification" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                Qualification
                 </Link>
-                <Link href="#projects" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                <Link href="/contact" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                Skill Set
+                </Link>
+                <Link href="/projects" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Projects
                 </Link>
-                <Link href="#contact" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                <Link href="/contact" className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Contact
                 </Link>
                 <a href="mailto:your-email@example.com" className="bg-yellow-400 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300 ml-4">
