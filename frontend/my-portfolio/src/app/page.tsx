@@ -2,10 +2,10 @@ import Image from "next/image";
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 import About from "./components/about";
+import SkillSet from "./components/skillset";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-import SkillSet from "./components/skillset";
-// import Projects from "./components/projects";
+import ProjectCard from "./components/projectcard";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <SkillSet />
-      {/* <Projects /> */}
+      <ProjectCard />
       <Contact />
       <Footer />
     </>
