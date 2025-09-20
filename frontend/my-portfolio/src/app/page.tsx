@@ -12,11 +12,11 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <About />
-      <SkillSet />
       <Projects />
+      {/* <About />
+      <SkillSet />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
