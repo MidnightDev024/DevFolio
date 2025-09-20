@@ -5,7 +5,7 @@ import About from "./components/about";
 import SkillSet from "./components/skillset";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-import ProjectCard from "./components/projectcard";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <SkillSet />
-      <ProjectCard />
+      <Projects />
       <Contact />
       <Footer />
     </>

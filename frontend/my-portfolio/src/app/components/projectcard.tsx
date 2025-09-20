@@ -2,8 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
+// This defines the structure of the data the component expects
 interface ProjectProps {
   project: {
+    id: number;
     title: string;
     description: string;
     imageUrl: string;
@@ -13,6 +15,7 @@ interface ProjectProps {
   };
 }
 
+// It receives props and specifically looks for one named "project"
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div className="bg-slate-800 rounded-lg overflow-hidden group">
@@ -20,8 +23,8 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         <Image
           src={project.imageUrl}
           alt={`Screenshot of ${project.title}`}
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          style={{ objectFit: "cover" }}
           className="transition-transform duration-500 group-hover:scale-110"
         />
       </div>

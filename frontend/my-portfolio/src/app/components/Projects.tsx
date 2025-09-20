@@ -1,4 +1,5 @@
-import { projects } from '@/data/projects';
+// The "import { projects }" here matches the named export from your data file.
+import { projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
@@ -9,7 +10,8 @@ const Projects = () => {
           My Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {/* This loop passes each project object as a prop named "project" */}
+          {projects.map((project: any) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
