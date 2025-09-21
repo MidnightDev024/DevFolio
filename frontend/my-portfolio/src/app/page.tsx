@@ -6,6 +6,8 @@ import SkillSet from "./components/skillset";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Projects from "./components/Projects";
+import Ticker from "./components/tiker";
+import Testimonials from "./components/testimonial";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projects />
+      <Ticker />
+      <Testimonials />
       {/* <About />
       <SkillSet />
       <Contact />

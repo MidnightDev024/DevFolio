@@ -69,3 +69,19 @@ body {
     opacity: .5;
   }
 }
+
+/* Add this at the end of your globals.css file */
+
+.ticker-container .ticker-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
