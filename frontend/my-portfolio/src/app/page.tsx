@@ -4,7 +4,8 @@ import Navbar from "./components/navbar";
 import About from "./components/about";
 import Projects from "./components/Projects";
 import Ticker from "./components/tiker";
-import Testimonials from "./components/testimonial";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Projects />
       <Ticker />
       <About />
+      <Contact />
+      <Footer />
     </>
   );
 };
