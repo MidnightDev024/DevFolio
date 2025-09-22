@@ -108,7 +108,7 @@ const NewHero = () => {
               Explore My Work
             </Link>
             <Link
-              href="#contact"
+              href="#about"
               className="bg-teal-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition-colors"
             >
               Let's Connect

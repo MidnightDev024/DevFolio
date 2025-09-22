@@ -56,13 +56,19 @@ const NewAbout = () => {
           {/* Card 4: Map (Spanning 2 columns on large screens) */}
           <div className="lg:col-span-3 bg-slate-800/50 p-6 rounded-xl border border-white/10 h-80">
              {/* Paste your iframe code here and add the className */}
-             <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.526320295!2d76.81307299667618!3d28.64368463556491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1726986812833!5m2!1sen!2sin" 
-               className="w-full h-full border-0 rounded-lg" 
-               allowFullScreen={true}
-               loading="lazy" 
-               referrerPolicy="no-referrer-when-downgrade">
-             </iframe>
+              {/* <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.526320295!2d76.81307299667618!3d28.64368463556491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1726986812833!5m2!1sen!2sin" 
+                className="w-full h-full border-0 rounded-lg" 
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+              </iframe> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.5258152316!2d76.76358322284956!3d28.643684747418888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1758557196257!5m2!1sen!2sin"
+                className="w-full h-full border-0 rounded-lg" 
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
           </div>
 
         </div>
