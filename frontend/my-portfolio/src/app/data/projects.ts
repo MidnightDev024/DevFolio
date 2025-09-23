@@ -1,65 +1,65 @@
+// Inside src/data/projects.ts...
+
 export const projects = [
   {
     id: 1,
-    title: "AI Image Generation App",
-    description: "A full-stack MERN app that leverages AI for text-to-image generation.",
-    mainImage: "/project-1-main.png", // The image for the main grid
-    
-    // New: An array of the project's key components for deconstruction
+    title: "TextUtils - A text Manipulation App",
+    description: "A text manipulation app that provides various utilities for editing and transforming text.",
+    mainImage: "/TextUtils.png",
     components: [
       {
         id: "c1-navbar",
         name: "Navbar",
-        image: "/project-1-navbar.png", // Image of just the navbar
+        image: "/textutilsNavBar.png",
         annotation: "Designed a clean, responsive navigation with user authentication status.",
-        position: { x: -80, y: -60 } // Where it will fly to (in %)
+        position: { x: -80, y: -100 },
+        size: 'large'
       },
       {
         id: "c1-gallery",
         name: "Image Gallery",
-        image: "/project-1-gallery.png",
+        image: "/TextUtils-gallery.png",
         annotation: "Implemented an infinite scroll gallery with a credit system for API usage.",
-        position: { x: 0, y: 30 }
+        position: { x: -40, y: 10 }
       },
       {
         id: "c1-form",
         name: "Prompt Form",
-        image: "/project-1-form.png",
+        image: "/TextUtils-form.png",
         annotation: "Connected the form to the Clipdrop API for AI image generation.",
-        position: { x: 80, y: -40 }
+        position: { x: 60, y: -60 }
       },
     ]
   },
-  // --- Add your second project here in the same format ---
   {
     id: 2,
-    title: "PG and Rental Website",
-    description: "A freelance project for a PG and rental booking platform.",
-    mainImage: "/project-2-main.png",
+    title: "NewsHatch - A app for latest news",
+    description: "A news app that provides the latest news articles from various sources.",
+    mainImage: "/NewsHatch.png",
     components: [
-      // Define components for your second project here...
-      
       {
         id: "c1-navbar",
         name: "Navbar",
-        image: "/project-1-navbar.png", // Image of just the navbar
+        image: "/NewsHatch-navbar.png",
         annotation: "Designed a clean, responsive navigation with user authentication status.",
-        position: { x: -80, y: -60 } // Where it will fly to (in %)
+        position: { x: -80, y: -100 },
+        size: 'large'
       },
       {
         id: "c1-gallery",
         name: "Image Gallery",
-        image: "/project-1-gallery.png",
+        image: "/NewsHatch-gallery.png",
         annotation: "Implemented an infinite scroll gallery with a credit system for API usage.",
-        position: { x: 0, y: 30 }
+        position: { x: -40, y: 10 }
       },
       {
         id: "c1-form",
         name: "Prompt Form",
-        image: "/project-1-form.png",
+        image: "/NewsHatch-form.png",
         annotation: "Connected the form to the Clipdrop API for AI image generation.",
-        position: { x: 80, y: -40 }
+        position: { x: 60, y: -60 }
       },
     ]
-  }
+  },
+  // ... update positions for your other projects as well
 ];
