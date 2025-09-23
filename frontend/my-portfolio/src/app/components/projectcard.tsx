@@ -15,7 +15,7 @@ const DeconProjectCard: React.FC<DeconProjectCardProps> = ({ project, onClick })
       onClick={onClick} 
       className="bg-slate-800/50 rounded-xl border border-white/10 overflow-hidden cursor-pointer group"
     >
-      <div className="relative h-52">
+      <div className="relative aspect-video"> {/* Changed from h-52 */}
         <Image
           src={project.mainImage}
           alt={project.title}
