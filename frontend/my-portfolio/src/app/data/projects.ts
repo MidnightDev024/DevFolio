@@ -17,16 +17,16 @@ export const projects = [
       },
       {
         id: "c1-gallery",
-        name: "Image Gallery",
-        image: "/TextUtils-gallery.png",
-        annotation: "Implemented an infinite scroll gallery with a credit system for API usage.",
+        name: "Main Section",
+        image: "/textutilsHero.png",
+        annotation: "Easy to use text manipulation tools with real-time preview.",
         position: { x: -40, y: 10 }
       },
       {
         id: "c1-form",
-        name: "Prompt Form",
-        image: "/TextUtils-form.png",
-        annotation: "Connected the form to the Clipdrop API for AI image generation.",
+        name: "About Section",
+        image: "/textutilsAbout.png",
+        annotation: "Provides information about the app and its features.",
         position: { x: 60, y: -60 }
       },
     ]
@@ -34,29 +34,29 @@ export const projects = [
   {
     id: 2,
     title: "NewsHatch - A app for latest news",
-    description: "A news app that provides the latest news articles from various sources.",
+    description: "A news app that provides the latest news articles from various sources. created with the concept of fetching data from an API.",
     mainImage: "/NewsHatch.png",
     components: [
       {
         id: "c1-navbar",
         name: "Navbar",
-        image: "/NewsHatch-navbar.png",
+        image: "/newhatchNavBar.png",
         annotation: "Designed a clean, responsive navigation with user authentication status.",
         position: { x: -80, y: -100 },
         size: 'large'
       },
       {
         id: "c1-gallery",
-        name: "Image Gallery",
-        image: "/NewsHatch-gallery.png",
-        annotation: "Implemented an infinite scroll gallery with a credit system for API usage.",
+        name: "Main Section",
+        image: "/newhatchHero.png",
+        annotation: "Displays the latest news articles with a clean and modern layout.",
         position: { x: -40, y: 10 }
       },
       {
         id: "c1-form",
-        name: "Prompt Form",
-        image: "/NewsHatch-form.png",
-        annotation: "Connected the form to the Clipdrop API for AI image generation.",
+        name: "About Section",
+        image: "/newhatchBotomLook.png",
+        annotation: "Further look at APP features. Include Previous and Next buttons for better navigation.",
         position: { x: 60, y: -60 }
       },
     ]
