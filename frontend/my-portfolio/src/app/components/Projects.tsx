@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { projects } from '../data/projects';
-import DeconProjectCard from './ProjectCard';
+import DeconProjectCard from './ProjectCard'; // Make sure this path is correct
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
@@ -14,7 +14,16 @@ const DeconstructedProjects = () => {
   return (
     <section id="projects" className="py-20 md:py-28">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* ... Grid code remains the same ... */}
+        
+        {/* --- ADD THESE LINES BACK IN --- */}
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+          My Work
+        </h2>
+        <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
+          Click on a project to see a deconstruction of its components and the thinking behind them.
+        </p>
+        {/* ---------------------------------- */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <motion.div key={project.id} layoutId={`project-card-${project.id}`}>
@@ -46,11 +55,9 @@ const DeconstructedProjects = () => {
               
               <div className="relative w-full h-full">
                 {selectedProject.components.map((component, index) => {
-                  // --- THIS IS THE NEW LOGIC ---
-                  // Check if a special size is defined, otherwise use the default.
                   const cardSizeClass = component.size === 'large' 
-                    ? 'max-w-xl md:max-w-3xl' // Larger class for the navbar
-                    : 'max-w-xs md:max-w-md';  // Default size for other components
+                    ? 'max-w-xl md:max-w-3xl'
+                    : 'max-w-xs md:max-w-md';
 
                   return (
                     <motion.div
@@ -70,7 +77,7 @@ const DeconstructedProjects = () => {
                       }}
                       style={{ top: '50%', left: '50%' }}
                     >
-                      <div className={`relative ${cardSizeClass}`}> {/* Apply the dynamic size class here */}
+                      <div className={`relative ${cardSizeClass}`}>
                         <Image
                           src={component.image}
                           alt={component.name}
