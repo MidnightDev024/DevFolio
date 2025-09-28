@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { projects } from '../data/projects';
+import projects from '../data/projects';
 import DeconProjectCard from './ProjectCard'; // Make sure this path is correct
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
