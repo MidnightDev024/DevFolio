@@ -15,7 +15,7 @@ const NewContact = () => {
               </p>
             </div>
             <Link
-              href="mailto:your-email@example.com"
+              href="mailto:chawlaakash024@gmail.com"
               className="bg-teal-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition-colors flex-shrink-0"
             >
               Contact Me
