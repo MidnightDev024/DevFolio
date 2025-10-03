@@ -4,6 +4,7 @@ const projects = [
     title: "TextUtils - A text Manipulation App",
     description: "A text manipulation app that provides various utilities for editing and transforming text.",
     mainImage: "/TextUtils.png",
+    liveLink: "hhttps://text-utils-kappa-ten.vercel.app/",
     components: [
       {
         id: "c1-navbar",
@@ -34,6 +35,7 @@ const projects = [
     title: "NewsHatch - A app for latest news",
     description: "A news app that provides the latest news articles from various sources. created with the concept of fetching data from an API.",
     mainImage: "/NewsHatch.png",
+    liveLink: "https://textutils-akash.vercel.app",
     components: [
       {
         id: "c1-navbar",
