@@ -15,6 +15,8 @@ type ClientProject = {
   title: string;
   description: string;
   mainImage: string;
+  liveLink?: string;
+  previewLink?: string;
   components?: IProjectComponent[];
 };
 
@@ -33,6 +35,8 @@ const DeconstructedProjects = () => {
           title: p.title,
           description: p.description,
           mainImage: p.mainImage,
+          liveLink: p.liveLink,
+          previewLink: p.previewLink,
           components: p.components,
         }));
         if (fetched.length > 0) {
@@ -45,6 +49,8 @@ const DeconstructedProjects = () => {
           title: p.title,
           description: p.description,
           mainImage: p.mainImage,
+          liveLink: p.liveLink,
+          previewLink: p.previewLink,
           components: p.components,
         }));
         setProjects(fallback);
@@ -55,6 +61,8 @@ const DeconstructedProjects = () => {
           title: p.title,
           description: p.description,
           mainImage: p.mainImage,
+          liveLink: p.liveLink,
+          previewLink: p.previewLink,
           components: p.components,
         }));
         setProjects(fallback);
