@@ -1,110 +1,36 @@
-# 🌌 Midnight Dev Portfolio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A full-stack MERN portfolio website built with Vite + React (frontend) and Express + MongoDB (backend). 
+## Getting Started
 
-Designed to showcase projects, skills, and contact info with a sleek, dark-mode aesthetic.
-
----
-
-## 📁 Project Structure
-
-mid-night-dev/
-    ├── frontend/
-       ├── # React + Vite + Tailwind CSS
-       ├── # Express + MongoDB + Mongoose
-       ├── # README.md
-
----
-
-## 🚀 Tech Stack
-
-- **Frontend**: React, Vite, Tailwind CSS, Axios
-- **Backend**: Node.js, Express, Mongoose, MongoDB Atlas
-- **Deployment**: Vercel (frontend), Render (backend)
-- **Styling**: Dark mode, responsive layout, animated sections
-
----
-
-## 🧱 Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/mid-night-dev.git
-cd mid-night-dev
-```
-
-### 2. Install Dependencies
-
-Frontend
+First, run the development server:
 
 ```bash
-cd frontEnd
-npm install
-```
-
-Backend
-
-```bash
-cd ../backEnd
-npm install
-
-```
-
-### 3. Configure Environment Variables
-Create a .env file in backEnd/:
-
-```
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-```
-
-## 🧪 Running Locally
-
-### Start Backend
-
-```bash
-cd backEnd
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### Start Frontend
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-cd ../frontEnd
-npm run dev
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Frontend will run on http://localhost:5173
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Backend will run on http://localhost:5000
+## Learn More
 
-### 📦 API Endpoints
+To learn more about Next.js, take a look at the following resources:
 
-Method  |  Endpoint          |  Description
-|-------|--------------------|--------------|
-GET     |  /api/projects     |  Fetch all projects
-POST    |  /api/projects     |  Add new projects (admin)
-DELETE  |  /api/projects/:id |  Delete project (admin)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Deploy on Vercel
 
-### 🧑‍💻 Features
-- Dynamic project showcase from MongoDB
-- Responsive layout with Tailwind CSS
-- Admin-ready backend structure
-- SEO-optimized metadata (React Helmet)
-- Clean folder structure for scalability
-<!-- 
-📸 Screenshots
-Add screenshots of your homepage, project cards, and contact form here once deployed.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-
-🌐 Live Demo
-https://midnightdev.vercel.app (replace with your actual link) -->
-
-
-### 📬 Contact
-
-Made with 💻 by Akash Chawla
-
-[GitHub](https://github.com/MidnightDev024) • [Email](https://mail.google.com/mail/u/0/#inbox)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
