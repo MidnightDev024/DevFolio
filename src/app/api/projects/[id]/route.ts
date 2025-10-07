@@ -109,21 +109,17 @@
 //   }
 // }
 
-// Import NextRequest along with NextResponse
+
+
 import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/lib/dbConnect';
 import Project from '@/models/Project';
 
-// --- NEW, MORE ROBUST FUNCTION SIGNATURE ---
-export async function GET(
-  request: NextRequest, 
-  context: { params: { id: string } }
-) {
-  const { id } = context.params; // Get the id from the context object
+// --- THE FIX: We are explicitly typing params as 'any' ---
+export async function GET(request: NextRequest, { params }: { params: any }) {
   await dbConnect();
-
   try {
-    const project = await Project.findById(id);
+    const project = await Project.findById(params.id);
     if (!project) {
       return NextResponse.json({ success: false, error: 'Not Found' }, { status: 404 });
     }
@@ -134,17 +130,12 @@ export async function GET(
   }
 }
 
-// --- APPLY THE SAME FIX TO PUT ---
-export async function PUT(
-  request: NextRequest, 
-  context: { params: { id: string } }
-) {
-  const { id } = context.params;
+// Apply the same fix to PUT
+export async function PUT(request: NextRequest, { params }: { params: any }) {
   await dbConnect();
-
   try {
     const body = await request.json();
-    const updated = await Project.findByIdAndUpdate(id, body, { new: true });
+    const updated = await Project.findByIdAndUpdate(params.id, body, { new: true });
     if (!updated) {
       return NextResponse.json({ success: false, error: 'Not Found' }, { status: 404 });
     }
@@ -155,16 +146,11 @@ export async function PUT(
   }
 }
 
-// --- APPLY THE SAME FIX TO DELETE ---
-export async function DELETE(
-  request: NextRequest, 
-  context: { params: { id: string } }
-) {
-  const { id } = context.params;
+// Apply the same fix to DELETE
+export async function DELETE(request: NextRequest, { params }: { params: any }) {
   await dbConnect();
-
   try {
-    const deleted = await Project.findByIdAndDelete(id);
+    const deleted = await Project.findByIdAndDelete(params.id);
     if (!deleted) {
       return NextResponse.json({ success: false, error: 'Not Found' }, { status: 404 });
     }
