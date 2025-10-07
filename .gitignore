@@ -73,6 +73,7 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+.env
 
 # TypeScript cache
 *.tsbuildinfo
