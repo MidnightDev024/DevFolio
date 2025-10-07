@@ -115,7 +115,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from 'next';
-import SmoothScrollProvider from './components/SmoothScrollProvider'; // Import the new component
+import SmoothScrollProvider from './components/SmoothScrollProvider';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -141,6 +142,7 @@ export default function RootLayout({
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
