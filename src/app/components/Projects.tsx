@@ -7,8 +7,17 @@ import DeconProjectCard from '../components/projectcard'; // Make sure this is t
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
-import { IProjectComponent } from '@/models/Project';
+import { IProject } from '@/models/Project';
 import localProjects from '@/app/data/projects';
+
+type ProjectComponent = {
+  id: string;
+  name: string;
+  image: string;
+  annotation: string;
+  position: { x: number; y: number };
+  size?: string;
+};
 
 type ClientProject = {
   _id: string;
@@ -17,7 +26,7 @@ type ClientProject = {
   mainImage: string;
   liveLink?: string;
   previewLink?: string;
-  components?: IProjectComponent[];
+  components?: ProjectComponent[];
 };
 
 const DeconstructedProjects = () => {
