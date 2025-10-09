@@ -10,6 +10,8 @@ export async function POST() {
       title: p.title,
       description: p.description,
       mainImage: p.mainImage,
+      liveLink: p.liveLink,
+      previewLink: p.previewLink,
       components: p.components,
     }));
 
@@ -22,4 +24,6 @@ export async function POST() {
   }
 }
 
-
+export async function GET() {
+  return NextResponse.json({ message: 'Use POST to seed the database.' }, { status: 200 });
+}
