@@ -42,7 +42,7 @@ const projects = [
       {
         id: "c1-navbar",
         name: "Navbar",
-        image: "/newhatchNavBar.png",
+        image: "/newHatchNavBar.png",
         annotation: "Designed a clean, responsive navigation with user authentication status.",
         position: { x: -80, y: -100 },
         size: 'large'
