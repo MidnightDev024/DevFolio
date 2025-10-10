@@ -101,3 +101,11 @@ body {
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 640px) {
+  .popup-component {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    max-width: 90vw;
+  }
+}
