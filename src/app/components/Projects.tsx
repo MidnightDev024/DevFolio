@@ -3,7 +3,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import DeconProjectCard from '../components/projectcard'; // Make sure this is the correct component name
+import DeconProjectCard from '../components/projectcard'; 
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
