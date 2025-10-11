@@ -13,6 +13,7 @@ const projects = [
         image: "/textutilsNavBar.png",
         annotation: "Designed a clean, responsive navigation with user authentication status.",
         position: { x: -80, y: -100 },
+        mobilePosition: { x: 0, y: -80 },
         size: 'large'
       },
       {
@@ -20,14 +21,16 @@ const projects = [
         name: "Main Section",
         image: "/textutilsHero.png",
         annotation: "Easy to use text manipulation tools with real-time preview.",
-        position: { x: -40, y: 10 }
+        position: { x: -40, y: 10 },
+        mobilePosition: { x: -30, y: 0 },
       },
       {
         id: "c1-form",
         name: "About Section",
         image: "/textutilsAbout.png",
         annotation: "Provides information about the app and its features.",
-        position: { x: 60, y: -60 }
+        position: { x: 60, y: -60 },
+        mobilePosition: { x: 30, y: 80 },
       },
     ]
   },
@@ -45,6 +48,7 @@ const projects = [
         image: "/newHatchNavBar.png",
         annotation: "Designed a clean, responsive navigation with user authentication status.",
         position: { x: -80, y: -100 },
+        mobilePosition: { x: 0, y: -80 },
         size: 'large'
       },
       {
@@ -52,14 +56,16 @@ const projects = [
         name: "Main Section",
         image: "/newhatchHero.png",
         annotation: "Displays the latest news articles with a clean and modern layout.",
-        position: { x: -40, y: 10 }
+        position: { x: -40, y: 10 },
+        mobilePosition: { x: -30, y: 0 },
       },
       {
         id: "c1-form",
         name: "About Section",
         image: "/newhatchBotomLook.png",
         annotation: "Further look at APP features. Include Previous and Next buttons for better navigation.",
-        position: { x: 60, y: -60 }
+        position: { x: 60, y: -60 },
+        mobilePosition: { x: 30, y: 80 },
       },
     ]
   },
