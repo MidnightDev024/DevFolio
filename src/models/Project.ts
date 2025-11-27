@@ -1,4 +1,14 @@
-import mongoose, { Schema, models, Document } from 'mongoose';
+import mongoose, { Schema, model, models, Document } from 'mongoose';
+
+export interface IProjectComponent {
+  id?: string;
+  name: string;
+  image?: string;
+  annotation?: string;
+  position?: { x: number; y: number };
+  mobilePosition?: { x: number; y: number };
+  size?: string;
+}
 
 export interface IProject extends Document {
   title: string;
@@ -13,6 +23,7 @@ export interface IProject extends Document {
     image: string;
     annotation: string;
     position: { x: number; y: number };
+    mobilePosition?: { x: number; y: number };
     size?: string;
   }[];
 }
@@ -33,6 +44,10 @@ const ProjectSchema = new Schema<IProject>({
       annotation: String,
       size: String,
       position: {
+        type: { x: Number, y: Number },
+        _id: false,
+      },
+      mobilePosition: {
         type: { x: Number, y: Number },
         _id: false,
       },
