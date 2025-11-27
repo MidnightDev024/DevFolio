@@ -30,14 +30,14 @@ const DeconProjectCard: React.FC<DeconProjectCardProps> = ({ project, onClick })
         <h3 className="text-xl font-bold text-white">{project.title}</h3>
         <p className="text-slate-400 mt-2">{project.description}</p>
         
-        {project.previewLink && (
-          <div className="mt-4">
+        <div className="mt-4 flex gap-3">
+          {project.previewLink && (
             <a
               href={project.previewLink}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+              className="inline-flex items-center px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white text-sm font-medium rounded-lg border border-slate-600 transition-colors duration-200"
             >
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -45,8 +45,22 @@ const DeconProjectCard: React.FC<DeconProjectCardProps> = ({ project, onClick })
               </svg>
               Preview
             </a>
-          </div>
-        )}
+          )}
+          {project.liveLink && (
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center px-4 py-2 bg-teal-500 hover:bg-teal-600 text-black text-sm font-bold rounded-lg transition-colors duration-200"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              Live
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
