@@ -14,7 +14,7 @@ export interface IProject extends Document {
   title: string;
   description: string;
   mainImage: string;  
-  liveLink?: string;
+  liveLink: string;
   tags: string[];
   features: string[];
   components: {
@@ -32,7 +32,7 @@ const ProjectSchema = new Schema<IProject>({
   title: { type: String, required: true },
   description: { type: String, required: true },
   mainImage: { type: String, required: true },
-  liveLink: String,
+  liveLink: [String],
   tags: [String],
   features: [String],
   components: {
