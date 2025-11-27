@@ -14,12 +14,22 @@ const NewContact = () => {
                 Ready to bring your next project to life? Let's connect.
               </p>
             </div>
-            <Link
-              href="mailto:chawlaakash024@gmail.com"
-              className="bg-teal-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition-colors flex-shrink-0"
-            >
-              Contact Me
-            </Link>
+            <div className="flex gap-4 flex-shrink-0">
+              <Link
+                href="mailto:chawlaakash024@gmail.com"
+                className="bg-teal-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition-colors"
+              >
+                Contact Me
+              </Link>
+              <a
+                href="/AKASH RESUME.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-700 text-white font-bold py-3 px-6 rounded-lg border border-slate-600 hover:bg-slate-600 transition-colors"
+              >
+                Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>
