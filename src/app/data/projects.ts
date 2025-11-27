@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     title: "TextUtils - A text Manipulation App",
-    description: "A text manipulation app that provides various utilities for editing and transforming text.",
+    description: "A text manipulation app that provides various utilities for editing and transforming text. Dark mode protects the eyes of the user.", //convert eye protect line in another line
     mainImage: "/TextUtils.png",
     liveLink: "https://text-utils-kappa-ten.vercel.app/",
     previewLink: "https://text-utils-kappa-ten.vercel.app/",
