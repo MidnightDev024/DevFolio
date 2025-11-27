@@ -11,7 +11,8 @@ import {
   SiObsidian,
   SiStackblitz,
   SiC,
-  SiCplusplus
+  SiCplusplus,
+  SiCloudinary
 } from 'react-icons/si';
 
 const Experience = () => {
@@ -36,6 +37,7 @@ const Experience = () => {
     { icon: <FaGitAlt size={48} />, name: 'Git' },
     { icon: <SiObsidian size={48} />, name: 'Obsidian' },
     { icon: <SiStackblitz size={48} />, name: 'StackBlitz' },
+    { icon: <SiCloudinary size={48} />, name: 'Cloudinary' },
   ];
 
   return (
