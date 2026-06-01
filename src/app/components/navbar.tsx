@@ -12,7 +12,7 @@ const NewNavbar = () => {
     { href: '#projects', label: 'Projects', isExternal: false },
     { href: '#about', label: 'About', isExternal: false },
     { href: '#contact', label: 'Contact', isExternal: false },
-    { href: '/AKASH RESUME.pdf', label: 'Resume', isExternal: true },
+    { href: '/AKASH RESUME.pdf?v=2', label: 'Resume', isExternal: true },
   ];
 
   return (

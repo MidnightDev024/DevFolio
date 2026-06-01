@@ -57,14 +57,15 @@ const NewAbout = () => {
 
           {/* Card 4: Map */}
           <div className="lg:col-span-3 bg-slate-800/50 p-6 rounded-xl border border-white/10 h-80">
-             <iframe 
-               title="My Location on Google Maps"
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486713.414752478!2d76.76358322284956!3d28.643684747418888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e1!3m2!1sen!2sin!4v1758738250771!5m2!1sen!2sin"
-               className="w-full h-full border-0 rounded-lg" 
-               allowFullScreen={true}
-               loading="lazy" 
-               referrerPolicy="no-referrer-when-downgrade">
-             </iframe>
+            <iframe 
+              title="My Location on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486713.414752478!2d76.76358322284956!3d28.643684747418888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e1!3m2!1sen!2sin!4v1758738250771!5m2!1sen!2sin"
+              className="w-full h-full border-0 rounded-lg" 
+              allowFullScreen={true}
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
 
         </div>

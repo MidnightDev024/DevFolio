@@ -22,7 +22,7 @@ const NewContact = () => {
                 Contact Me
               </Link>
               <a
-                href="/AKASH RESUME.pdf"
+                href="/AKASH RESUME.pdf?v=2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-700 text-white font-bold py-3 px-6 rounded-lg border border-slate-600 hover:bg-slate-600 transition-colors"
